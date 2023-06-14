@@ -41,7 +41,7 @@ def interact_with_user(all_data):
             closest_guesses = [guess for guess, diff in zip(guesses, differences) if diff == min_diff]
 
             if min_diff == 0:
-                print("\033[1mBANG! You've correctly guessed the rank.\033[0m")
+                print("\033[1mYoooooo! You've correctly guessed the rank.\033[0m")
             elif len(closest_guesses) > 1:
                 print(f"There was a tie! The closest guesses were {closest_guesses}, which were off by {min_diff}.")
             else:
